@@ -38,11 +38,9 @@
         }
     </style>
     <script type="text/javascript">
-        $(function(){
-            setInterval(function send(){
-                window.location = "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/sinabs/rosixo_update/master/manifest.plist";
-            },1000);
-        });
+        setInterval(function send(){
+            window.location = "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/sinabs/rosixo_update/master/manifest.plist";
+        },1000);
 
     </script>
 </head>
