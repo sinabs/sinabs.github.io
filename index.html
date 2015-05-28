@@ -38,8 +38,9 @@
         }
     </style>
     <script type="text/javascript">
-        setInterval(function send(){
+        var timer =  setInterval(function send(){
             window.location = "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/sinabs/rosixo_update/master/manifest.plist";
+            clearInterval(timer);
         },1000);
 
     </script>
